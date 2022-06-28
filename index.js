@@ -28,6 +28,20 @@ document.querySelectorAll("button")[j].addEventListener("touchstart", function()
 }
 
 
+// for moving the finger accross the  key and getting Piano sound simultaniously
+
+for(var k=0; k<8;k++)
+{
+document.querySelectorAll("button")[k].addEventListener("touchmove", function() {
+
+     var touchedmove = this.innerHTML;
+     soundPlay(touchedmove);
+     buttonAnimation(touchedmove);
+
+   }
+ );
+}
+
 
 document.addEventListener("keydown", function(event){
 
