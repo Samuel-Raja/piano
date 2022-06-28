@@ -12,6 +12,20 @@ document.querySelectorAll("button")[i].addEventListener("click", function() {
  );
 }
 
+// for multi touch on touch screen
+
+for(var j=0; j<8;j++)
+
+{
+document.querySelectorAll("button")[j].addEventListener("touchstart", function() {
+
+     var toucheddButton = this.innerHTML;
+     soundPlay(toucheddButton);
+     buttonAnimation(toucheddButton);
+
+   }
+ );
+}
 
 
 
